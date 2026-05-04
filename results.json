@@ -815,9 +815,9 @@
   {
    "downloads": 34868180,
    "name": "backports-zstd",
-   "css_class": "success",
-   "icon": "\ud83e\uddf5",
-   "free_threaded_wheel": true
+   "css_class": "warning",
+   "icon": "\u2717",
+   "free_threaded_wheel": false
   },
   {
    "downloads": 34077481,
@@ -1588,6 +1588,13 @@
    "css_class": "success",
    "icon": "\ud83e\uddf5",
    "free_threaded_wheel": true
+  },
+  {
+   "downloads": 6536201,
+   "name": "pinecone",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "free_threaded_wheel": false
   },
   {
    "downloads": 6504091,
@@ -2512,14 +2519,7 @@
    "css_class": "warning",
    "icon": "\u2717",
    "free_threaded_wheel": false
-  },
-  {
-   "downloads": 2519448,
-   "name": "decord",
-   "css_class": "pure-py",
-   "icon": "\ud83d\udc0d",
-   "free_threaded_wheel": false
   }
  ],
- "last_update": "Sunday, 03 May 2026, 10:56:32 UTC"
+ "last_update": "Monday, 04 May 2026, 11:51:10 UTC"
 }
