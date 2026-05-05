@@ -225,6 +225,13 @@
    "free_threaded_wheel": true
   },
   {
+   "downloads": 228086267,
+   "name": "sglang",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "free_threaded_wheel": false
+  },
+  {
    "downloads": 224835625,
    "name": "psycopg2-binary",
    "css_class": "warning",
@@ -1438,9 +1445,9 @@
   {
    "downloads": 7833843,
    "name": "python-bidi",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "free_threaded_wheel": false
+   "css_class": "success",
+   "icon": "\ud83e\uddf5",
+   "free_threaded_wheel": true
   },
   {
    "downloads": 7831853,
@@ -2512,14 +2519,7 @@
    "css_class": "success",
    "icon": "\ud83e\uddf5",
    "free_threaded_wheel": true
-  },
-  {
-   "downloads": 2527633,
-   "name": "igraph",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "free_threaded_wheel": false
   }
  ],
- "last_update": "Monday, 04 May 2026, 11:51:10 UTC"
+ "last_update": "Tuesday, 05 May 2026, 11:16:45 UTC"
 }
