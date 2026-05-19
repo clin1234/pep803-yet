@@ -82,7 +82,7 @@ def annotate_wheels(packages, to_chart: int) -> list[dict]:
             # Don't show packages with only sdists or pure Python wheels
             continue
 
-        package["free_threaded_wheel"] = has_free_threaded_wheel
+        package["stable_free_threaded_wheel"] = has_stable_free_threaded_wheel
 
         keep.append(package)
         total += 1
