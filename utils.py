@@ -39,6 +39,7 @@ def annotate_wheels(packages, to_chart: int) -> list[dict]:
         has_other_binary_wheel = False
         has_free_threaded_wheel = False
         has_pure_python_wheel = False
+        has_stable_free_threaded_wheel = False
         url = get_json_url(package["name"])
         response = SESSION.get(url)
         if response.status_code != 200:
