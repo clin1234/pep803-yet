@@ -67,7 +67,7 @@
                 <p>This site shows the top 500 most-downloaded packages with extensions on <a href="https://pypi.org/">PyPI</a>:</p>
                 <ul>
                     <li><span class="text-success">Dark green</span> packages <span id="success-percent"></span> with a 🧵 offer free-threaded stable ABI wheels</li>
-                    <li><span class="text-success">Purple</span> packages <span id="success-percent"></span> with a 🧵 offer version-specific free-threaded ABI wheels</li>
+                    <li><span class="text-success">Purple</span> packages <span id="cpy-percent"></span> with a 🧵 offer version-specific free-threaded ABI wheels</li>
                     <li><span class="text-pure-py">Light green</span> packages <span id="pure-py-percent"></span> offer generic pure Python wheels, but no compiled wheels targeting the free-threading stable ABI (yet!)</li>
                     <li><span class="text-warning">Orange</span> packages <span id="todo-percent"></span> offer wheels, but no compiled wheels targeting the free-threading stable ABI (yet!)</li>
                 </ul>
@@ -121,7 +121,7 @@
             document.getElementById('success-percent').innerText = `(${successPercentage.toFixed(0)}%)`;
             document.getElementById('todo-percent').innerText = `(${todoPercentage.toFixed(0)}%)`;
             document.getElementById('pure-py-percent').innerText = `(${purePyPercentage.toFixed(0)}%)`;
-            document.getElementById('cpy-percent').innerText = `(${purePyPercentage.toFixed(0)}%)`;
+            document.getElementById('cpy-percent').innerText = `(${cpPercentage.toFixed(0)}%)`;
             });
         });
     </script>
