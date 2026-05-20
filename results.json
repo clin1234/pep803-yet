@@ -80,8 +80,8 @@
   {
    "downloads": 481114260,
    "name": "yarl",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -2565,8 +2565,8 @@
   {
    "downloads": 2458362,
    "name": "zeroconf",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Tuesday, 19 May 2026, 20:14:15 UTC"
+ "last_update": "Wednesday, 20 May 2026, 12:30:55 UTC"
 }
