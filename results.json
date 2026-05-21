@@ -2194,8 +2194,8 @@
   {
    "downloads": 3299525,
    "name": "torchcodec",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Wednesday, 20 May 2026, 12:30:55 UTC"
+ "last_update": "Thursday, 21 May 2026, 12:46:55 UTC"
 }
