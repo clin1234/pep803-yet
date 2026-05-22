@@ -1452,8 +1452,8 @@
   {
    "downloads": 7831853,
    "name": "toons",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -2089,8 +2089,8 @@
   {
    "downloads": 3579681,
    "name": "py-rust-stemmers",
-   "css_class": "pure-py",
-   "icon": "\ud83d\udc0d",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -2565,8 +2565,8 @@
   {
    "downloads": 2458362,
    "name": "zeroconf",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -2978,8 +2978,8 @@
   {
    "downloads": 1568761,
    "name": "pystemmer",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Thursday, 21 May 2026, 12:46:55 UTC"
+ "last_update": "Friday, 22 May 2026, 12:21:54 UTC"
 }
