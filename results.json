@@ -2040,8 +2040,8 @@
   {
    "downloads": 3810399,
    "name": "cupy-cuda12x",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Friday, 22 May 2026, 12:21:54 UTC"
+ "last_update": "Saturday, 23 May 2026, 11:21:32 UTC"
 }
