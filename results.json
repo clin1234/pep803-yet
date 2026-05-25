@@ -2236,8 +2236,8 @@
   {
    "downloads": 3213317,
    "name": "nvidia-cutlass-dsl-libs-base",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Sunday, 24 May 2026, 11:19:07 UTC"
+ "last_update": "Monday, 25 May 2026, 13:34:52 UTC"
 }
