@@ -1872,8 +1872,8 @@
   {
    "downloads": 3834144,
    "name": "blosc2",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -2194,8 +2194,8 @@
   {
    "downloads": 2977326,
    "name": "djlint",
-   "css_class": "pure-py",
-   "icon": "\ud83d\udc0d",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Thursday, 04 June 2026, 12:45:50 UTC"
+ "last_update": "Friday, 05 June 2026, 12:39:47 UTC"
 }
