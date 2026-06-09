@@ -1459,8 +1459,8 @@
   {
    "downloads": 6131463,
    "name": "pikepdf",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Monday, 08 June 2026, 14:10:28 UTC"
+ "last_update": "Tuesday, 09 June 2026, 12:39:54 UTC"
 }
