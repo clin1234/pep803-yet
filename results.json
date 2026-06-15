@@ -155,13 +155,6 @@
    "stable_free_threaded_wheel": false
   },
   {
-   "downloads": 289535247,
-   "name": "sqlalchemy",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
-  },
-  {
    "downloads": 282727653,
    "name": "tomli",
    "css_class": "cp-free",
@@ -3499,7 +3492,14 @@
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 848078,
+   "name": "sqlglotc",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Sunday, 14 June 2026, 12:01:00 UTC"
+ "last_update": "Monday, 15 June 2026, 15:47:47 UTC"
 }
