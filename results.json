@@ -1445,8 +1445,8 @@
   {
    "downloads": 6235420,
    "name": "rustworkx",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -1781,8 +1781,8 @@
   {
    "downloads": 4241988,
    "name": "autobahn",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Wednesday, 17 June 2026, 13:42:56 UTC"
+ "last_update": "Thursday, 18 June 2026, 12:57:10 UTC"
 }
