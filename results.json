@@ -2131,8 +2131,8 @@
   {
    "downloads": 3110916,
    "name": "pyobjc-core",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -2215,8 +2215,8 @@
   {
    "downloads": 2920665,
    "name": "onnxruntime-gpu",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Thursday, 18 June 2026, 12:57:10 UTC"
+ "last_update": "Friday, 19 June 2026, 13:38:18 UTC"
 }
