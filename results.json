@@ -2320,8 +2320,8 @@
   {
    "downloads": 3595773,
    "name": "djlint",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Saturday, 04 July 2026, 11:48:05 UTC"
+ "last_update": "Sunday, 05 July 2026, 11:39:55 UTC"
 }
