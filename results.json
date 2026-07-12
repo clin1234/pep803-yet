@@ -64,6 +64,13 @@
    "stable_free_threaded_wheel": false
   },
   {
+   "downloads": 633238370,
+   "name": "litellm",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "stable_free_threaded_wheel": false
+  },
+  {
    "downloads": 632089652,
    "name": "aiohttp",
    "css_class": "cp-free",
@@ -815,6 +822,13 @@
   {
    "downloads": 41324847,
    "name": "opencv-python-headless",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 39989340,
+   "name": "thrift",
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
@@ -3485,21 +3499,7 @@
    "css_class": "cp-free",
    "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1299560,
-   "name": "imagecodecs",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1289944,
-   "name": "grain",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Saturday, 11 July 2026, 11:14:45 UTC"
+ "last_update": "Sunday, 12 July 2026, 11:14:05 UTC"
 }
