@@ -3055,8 +3055,8 @@
   {
    "downloads": 1811808,
    "name": "lief",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Sunday, 12 July 2026, 11:14:05 UTC"
+ "last_update": "Monday, 13 July 2026, 12:35:49 UTC"
 }
