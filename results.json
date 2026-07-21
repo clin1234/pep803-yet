@@ -1499,6 +1499,13 @@
    "stable_free_threaded_wheel": false
   },
   {
+   "downloads": 8932451,
+   "name": "pipdeptree",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "stable_free_threaded_wheel": false
+  },
+  {
    "downloads": 8867348,
    "name": "openlineage-sql",
    "css_class": "warning",
@@ -3492,14 +3499,7 @@
    "css_class": "cp-free",
    "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1307940,
-   "name": "fasttext-predict",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Monday, 20 July 2026, 12:17:56 UTC"
+ "last_update": "Tuesday, 21 July 2026, 11:47:30 UTC"
 }
