@@ -1501,8 +1501,8 @@
   {
    "downloads": 8932451,
    "name": "pipdeptree",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Tuesday, 21 July 2026, 11:47:30 UTC"
+ "last_update": "Wednesday, 22 July 2026, 11:50:20 UTC"
 }
