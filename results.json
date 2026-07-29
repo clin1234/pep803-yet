@@ -2670,8 +2670,8 @@
   {
    "downloads": 2823830,
    "name": "stringzilla",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -2761,8 +2761,8 @@
   {
    "downloads": 2591556,
    "name": "mujoco",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Monday, 27 July 2026, 12:56:16 UTC"
+ "last_update": "Wednesday, 29 July 2026, 12:02:11 UTC"
 }
