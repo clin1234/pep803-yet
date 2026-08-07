@@ -556,9 +556,9 @@
   {
    "downloads": 82214499,
    "name": "ast-serialize",
-   "css_class": "cp-free",
+   "css_class": "success",
    "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
+   "stable_free_threaded_wheel": true
   },
   {
    "downloads": 80449982,
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Thursday, 06 August 2026, 12:04:36 UTC"
+ "last_update": "Friday, 07 August 2026, 10:56:21 UTC"
 }
