@@ -2250,8 +2250,8 @@
   {
    "downloads": 4008623,
    "name": "ibm-db",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -2985,8 +2985,8 @@
   {
    "downloads": 2197832,
    "name": "pytensor",
-   "css_class": "pure-py",
-   "icon": "\ud83d\udc0d",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Tuesday, 11 August 2026, 10:53:24 UTC"
+ "last_update": "Wednesday, 12 August 2026, 11:02:52 UTC"
 }
