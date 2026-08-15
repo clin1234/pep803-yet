@@ -773,9 +773,9 @@
   {
    "downloads": 48260681,
    "name": "hypothesis",
-   "css_class": "cp-free",
+   "css_class": "success",
    "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
+   "stable_free_threaded_wheel": true
   },
   {
    "downloads": 47249864,
@@ -2465,6 +2465,13 @@
    "stable_free_threaded_wheel": false
   },
   {
+   "downloads": 3335625,
+   "name": "asynch",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
+   "stable_free_threaded_wheel": false
+  },
+  {
    "downloads": 3335601,
    "name": "zeroconf",
    "css_class": "cp-free",
@@ -3492,14 +3499,7 @@
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1472373,
-   "name": "pysimdjson",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Friday, 14 August 2026, 10:59:59 UTC"
+ "last_update": "Saturday, 15 August 2026, 10:24:37 UTC"
 }
