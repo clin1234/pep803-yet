@@ -3221,6 +3221,13 @@
    "stable_free_threaded_wheel": false
   },
   {
+   "downloads": 1825414,
+   "name": "protovalidate",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
+   "stable_free_threaded_wheel": false
+  },
+  {
    "downloads": 1815888,
    "name": "plum-dispatch",
    "css_class": "pure-py",
@@ -3492,14 +3499,7 @@
    "css_class": "cp-free",
    "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1478670,
-   "name": "tree-sitter-fortran",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Tuesday, 18 August 2026, 10:29:20 UTC"
+ "last_update": "Wednesday, 19 August 2026, 10:30:43 UTC"
 }
