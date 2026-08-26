@@ -3431,6 +3431,13 @@
    "stable_free_threaded_wheel": false
   },
   {
+   "downloads": 1536190,
+   "name": "casadi",
+   "css_class": "pure-py",
+   "icon": "\ud83d\udc0d",
+   "stable_free_threaded_wheel": false
+  },
+  {
    "downloads": 1533884,
    "name": "tree-sitter-zig",
    "css_class": "warning",
@@ -3492,14 +3499,7 @@
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1483863,
-   "name": "pyopengl-accelerate",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Tuesday, 25 August 2026, 10:35:39 UTC"
+ "last_update": "Wednesday, 26 August 2026, 10:36:10 UTC"
 }
