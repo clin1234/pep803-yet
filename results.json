@@ -407,6 +407,13 @@
    "stable_free_threaded_wheel": false
   },
   {
+   "downloads": 133848740,
+   "name": "isort",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
+   "stable_free_threaded_wheel": false
+  },
+  {
    "downloads": 130349391,
    "name": "tornado",
    "css_class": "warning",
@@ -801,8 +808,8 @@
   {
    "downloads": 45723143,
    "name": "statsmodels",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3492,14 +3499,7 @@
    "css_class": "cp-free",
    "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1496365,
-   "name": "zensical",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Wednesday, 26 August 2026, 10:36:10 UTC"
+ "last_update": "Thursday, 27 August 2026, 20:11:29 UTC"
 }
