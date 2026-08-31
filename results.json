@@ -2187,8 +2187,8 @@
   {
    "downloads": 4260237,
    "name": "bluetooth-data-tools",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Sunday, 30 August 2026, 14:44:21 UTC"
+ "last_update": "Monday, 31 August 2026, 17:26:14 UTC"
 }
