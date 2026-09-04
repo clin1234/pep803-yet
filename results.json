@@ -388,8 +388,8 @@
   {
    "downloads": 165666341,
    "name": "snowflake-connector-python",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -2801,13 +2801,6 @@
    "stable_free_threaded_wheel": false
   },
   {
-   "downloads": 2434069,
-   "name": "pydantic-monty-runtime",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "stable_free_threaded_wheel": false
-  },
-  {
    "downloads": 2428058,
    "name": "adbc-driver-manager",
    "css_class": "cp-free",
@@ -3499,7 +3492,14 @@
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 1461753,
+   "name": "hidapi",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
+   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Thursday, 03 September 2026, 14:12:28 UTC"
+ "last_update": "Friday, 04 September 2026, 14:03:39 UTC"
 }
