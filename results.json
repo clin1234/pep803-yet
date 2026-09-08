@@ -717,8 +717,8 @@
   {
    "downloads": 50746394,
    "name": "pymssql",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Monday, 07 September 2026, 15:35:46 UTC"
+ "last_update": "Tuesday, 08 September 2026, 14:12:52 UTC"
 }
