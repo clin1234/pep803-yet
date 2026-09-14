@@ -2780,6 +2780,13 @@
    "stable_free_threaded_wheel": false
   },
   {
+   "downloads": 2496715,
+   "name": "kernels",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
+   "stable_free_threaded_wheel": false
+  },
+  {
    "downloads": 2449862,
    "name": "array-record",
    "css_class": "warning",
@@ -2929,6 +2936,13 @@
   {
    "downloads": 2243673,
    "name": "pyqt6-sip",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 2219880,
+   "name": "humming-kernels",
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
@@ -3485,21 +3499,7 @@
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1465313,
-   "name": "zensical",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1461753,
-   "name": "hidapi",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Sunday, 13 September 2026, 14:08:51 UTC"
+ "last_update": "Monday, 14 September 2026, 16:12:45 UTC"
 }
