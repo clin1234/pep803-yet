@@ -1933,6 +1933,13 @@
    "stable_free_threaded_wheel": false
   },
   {
+   "downloads": 5433606,
+   "name": "numpy-financial",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "stable_free_threaded_wheel": false
+  },
+  {
    "downloads": 5410211,
    "name": "selectolax",
    "css_class": "cp-free",
@@ -3492,14 +3499,7 @@
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1467432,
-   "name": "solders",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Monday, 14 September 2026, 16:12:45 UTC"
+ "last_update": "Tuesday, 15 September 2026, 14:41:04 UTC"
 }
