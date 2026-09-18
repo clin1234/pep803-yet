@@ -1676,8 +1676,8 @@
   {
    "downloads": 7488032,
    "name": "numcodecs",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3412,8 +3412,8 @@
   {
    "downloads": 1622890,
    "name": "connectorx",
-   "css_class": "pure-py",
-   "icon": "\ud83d\udc0d",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Thursday, 17 September 2026, 14:44:51 UTC"
+ "last_update": "Friday, 18 September 2026, 14:10:39 UTC"
 }
