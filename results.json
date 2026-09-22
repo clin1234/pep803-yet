@@ -1352,13 +1352,6 @@
    "stable_free_threaded_wheel": false
   },
   {
-   "downloads": 13723705,
-   "name": "habluetooth",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "stable_free_threaded_wheel": false
-  },
-  {
    "downloads": 13019320,
    "name": "fastparquet",
    "css_class": "cp-free",
@@ -1431,6 +1424,13 @@
   {
    "downloads": 11382871,
    "name": "deptry",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 11257603,
+   "name": "mistral-vibe",
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Monday, 21 September 2026, 16:19:08 UTC"
+ "last_update": "Tuesday, 22 September 2026, 14:28:09 UTC"
 }
