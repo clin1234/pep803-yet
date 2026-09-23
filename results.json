@@ -1352,6 +1352,13 @@
    "stable_free_threaded_wheel": false
   },
   {
+   "downloads": 13723705,
+   "name": "habluetooth",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
+   "stable_free_threaded_wheel": false
+  },
+  {
    "downloads": 13019320,
    "name": "fastparquet",
    "css_class": "cp-free",
@@ -3492,14 +3499,7 @@
    "css_class": "cp-free",
    "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1503501,
-   "name": "open3d",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Tuesday, 22 September 2026, 14:28:09 UTC"
+ "last_update": "Wednesday, 23 September 2026, 14:45:39 UTC"
 }
