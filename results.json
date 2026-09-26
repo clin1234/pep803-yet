@@ -169,6 +169,13 @@
    "stable_free_threaded_wheel": false
   },
   {
+   "downloads": 409830091,
+   "name": "sqlalchemy",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
+   "stable_free_threaded_wheel": false
+  },
+  {
    "downloads": 407941830,
    "name": "scipy",
    "css_class": "cp-free",
@@ -3492,14 +3499,7 @@
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1535033,
-   "name": "brotlipy",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Friday, 25 September 2026, 15:04:36 UTC"
+ "last_update": "Saturday, 26 September 2026, 14:43:57 UTC"
 }
