@@ -2612,13 +2612,6 @@
    "stable_free_threaded_wheel": false
   },
   {
-   "downloads": 2992184,
-   "name": "awslambdaric",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
-  },
-  {
    "downloads": 2979535,
    "name": "kornia-rs",
    "css_class": "cp-free",
@@ -3499,7 +3492,14 @@
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 1535033,
+   "name": "brotlipy",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Sunday, 27 September 2026, 15:02:54 UTC"
+ "last_update": "Monday, 28 September 2026, 17:59:54 UTC"
 }
