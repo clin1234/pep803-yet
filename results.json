@@ -2082,8 +2082,8 @@
   {
    "downloads": 4880245,
    "name": "cftime",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -2609,6 +2609,13 @@
    "name": "lingua-language-detector",
    "css_class": "warning",
    "icon": "\u2717",
+   "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 2992184,
+   "name": "awslambdaric",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3492,14 +3499,7 @@
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1535033,
-   "name": "brotlipy",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Monday, 28 September 2026, 17:59:54 UTC"
+ "last_update": "Tuesday, 29 September 2026, 16:22:25 UTC"
 }
