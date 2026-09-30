@@ -10,9 +10,9 @@
   {
    "downloads": 1425744760,
    "name": "cryptography",
-   "css_class": "cp-free",
+   "css_class": "success",
    "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
+   "stable_free_threaded_wheel": true
   },
   {
    "downloads": 1257767516,
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Tuesday, 29 September 2026, 16:22:25 UTC"
+ "last_update": "Wednesday, 30 September 2026, 16:17:54 UTC"
 }
