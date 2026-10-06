@@ -1277,8 +1277,8 @@
   {
    "downloads": 10930930,
    "name": "geventhttpclient",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Monday, 05 October 2026, 19:07:57 UTC"
+ "last_update": "Tuesday, 06 October 2026, 16:33:17 UTC"
 }
