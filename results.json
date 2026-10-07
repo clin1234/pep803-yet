@@ -703,8 +703,8 @@
   {
    "downloads": 41861702,
    "name": "confluent-kafka",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Tuesday, 06 October 2026, 16:33:17 UTC"
+ "last_update": "Wednesday, 07 October 2026, 17:21:45 UTC"
 }
