@@ -3202,8 +3202,8 @@
   {
    "downloads": 1472651,
    "name": "sparsediffpy",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Wednesday, 07 October 2026, 17:21:45 UTC"
+ "last_update": "Thursday, 08 October 2026, 17:15:12 UTC"
 }
