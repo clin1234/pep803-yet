@@ -66,8 +66,8 @@
   {
    "downloads": 472045565,
    "name": "multidict",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -283,8 +283,8 @@
   {
    "downloads": 166389324,
    "name": "tokenizers",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -1753,9 +1753,9 @@
   {
    "downloads": 5238172,
    "name": "pyqwest",
-   "css_class": "cp-free",
+   "css_class": "success",
    "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
+   "stable_free_threaded_wheel": true
   },
   {
    "downloads": 5175136,
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Thursday, 08 October 2026, 17:15:12 UTC"
+ "last_update": "Friday, 09 October 2026, 16:54:11 UTC"
 }
