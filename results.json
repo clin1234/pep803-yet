@@ -2117,8 +2117,8 @@
   {
    "downloads": 3408602,
    "name": "livekit-blingfire",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Sunday, 11 October 2026, 16:11:38 UTC"
+ "last_update": "Monday, 12 October 2026, 19:41:02 UTC"
 }
