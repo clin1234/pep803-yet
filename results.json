@@ -409,8 +409,8 @@
   {
    "downloads": 103373898,
    "name": "snowflake-connector-python",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -2131,8 +2131,8 @@
   {
    "downloads": 3377387,
    "name": "cftime",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3179,13 +3179,6 @@
    "stable_free_threaded_wheel": false
   },
   {
-   "downloads": 1494117,
-   "name": "tensordict",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
-  },
-  {
    "downloads": 1489205,
    "name": "uharfbuzz",
    "css_class": "warning",
@@ -3499,7 +3492,14 @@
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 1229953,
+   "name": "nccl4py",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
+   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Wednesday, 14 October 2026, 15:21:51 UTC"
+ "last_update": "Thursday, 15 October 2026, 14:46:37 UTC"
 }
