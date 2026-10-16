@@ -1256,9 +1256,9 @@
   {
    "downloads": 11211169,
    "name": "obstore",
-   "css_class": "cp-free",
+   "css_class": "success",
    "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
+   "stable_free_threaded_wheel": true
   },
   {
    "downloads": 11210695,
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Thursday, 15 October 2026, 14:46:37 UTC"
+ "last_update": "Friday, 16 October 2026, 14:38:08 UTC"
 }
