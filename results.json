@@ -1634,8 +1634,8 @@
   {
    "downloads": 6074930,
    "name": "pglast",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Saturday, 17 October 2026, 13:32:24 UTC"
+ "last_update": "Sunday, 18 October 2026, 13:51:22 UTC"
 }
