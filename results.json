@@ -451,8 +451,8 @@
   {
    "downloads": 85271565,
    "name": "pymupdf",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -1634,8 +1634,8 @@
   {
    "downloads": 6074930,
    "name": "pglast",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -1643,13 +1643,6 @@
    "name": "python-crfsuite",
    "css_class": "cp-free",
    "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 5839972,
-   "name": "pymupdf-layout",
-   "css_class": "warning",
-   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3499,7 +3492,14 @@
    "css_class": "cp-free",
    "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 1227507,
+   "name": "viztracer",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
+   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Sunday, 18 October 2026, 13:51:22 UTC"
+ "last_update": "Monday, 19 October 2026, 16:51:26 UTC"
 }
