@@ -409,15 +409,15 @@
   {
    "downloads": 103373898,
    "name": "snowflake-connector-python",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
    "downloads": 100712647,
    "name": "tornado",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -2117,9 +2117,9 @@
   {
    "downloads": 3378965,
    "name": "protobuf-py-ext",
-   "css_class": "cp-free",
+   "css_class": "success",
    "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
+   "stable_free_threaded_wheel": true
   },
   {
    "downloads": 3377387,
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Wednesday, 21 October 2026, 14:55:35 UTC"
+ "last_update": "Thursday, 22 October 2026, 14:54:49 UTC"
 }
