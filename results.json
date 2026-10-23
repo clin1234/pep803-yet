@@ -1774,9 +1774,9 @@
   {
    "downloads": 5122655,
    "name": "timezonefinder",
-   "css_class": "warning",
-   "icon": "\u2717",
-   "stable_free_threaded_wheel": false
+   "css_class": "success",
+   "icon": "\ud83e\uddf5",
+   "stable_free_threaded_wheel": true
   },
   {
    "downloads": 5103994,
@@ -2439,8 +2439,8 @@
   {
    "downloads": 2622481,
    "name": "loro",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3258,9 +3258,9 @@
   {
    "downloads": 1446037,
    "name": "protovalidate",
-   "css_class": "cp-free",
+   "css_class": "success",
    "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
+   "stable_free_threaded_wheel": true
   },
   {
    "downloads": 1442975,
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Thursday, 22 October 2026, 14:54:49 UTC"
+ "last_update": "Friday, 23 October 2026, 14:44:02 UTC"
 }
