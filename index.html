@@ -5,6 +5,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="wheel.svg">
+    <link rel="stylesheet" href="wheel.css">
     <style>
         body{margin-top:15px;}
         a.btn, h1{text-align: center;}
@@ -14,19 +15,6 @@
         a.btn:last-child{border-bottom-width: 1px; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;}
         pre {text-align: left;}
         footer{text-align: center;}
-        .btn-pure-py {
-          background-color: #90EE90;
-          border-color: #90EE90;
-          color: #000000;
-        }
-        .text-pure-py {
-          color: #90EE90;
-        }
-        .btn-pure-py:hover {
-          background-color: #90EE90;
-          border-color: #90EE90;
-          color: #000000;
-        }
         @media (prefers-color-scheme: dark) {
           body {
             color: #ccc;
@@ -64,16 +52,14 @@
                     See <a href="https://labs.quansight.org/blog/free-threaded-python-rollout">Free-threaded CPython is ready to experiment with!</a>
                 </p>
                 <h2 id="about-list">What is this list?</h2>
-                <p>This site shows the top 500 most-downloaded packages with extensions on <a href="https://pypi.org/">PyPI</a>:</p>
+                <p>This site shows the 100 most-downloaded <a href="https://pypi.org/">PyPI</a> packages whose latest release publishes <code>abi3</code> wheels, ranked by monthly download counts:</p>
                 <ul>
-                    <li><span class="text-success">Dark green</span> packages <span id="success-percent"></span> with a 🧵 offer free-threaded stable ABI wheels</li>
-                    <li><span class="text-success">Purple</span> packages <span id="cpy-percent"></span> with a 🧵 offer version-specific free-threaded ABI wheels</li>
-                    <li><span class="text-pure-py">Light green</span> packages <span id="pure-py-percent"></span> offer generic pure Python wheels, but no compiled wheels targeting the free-threading stable ABI (yet!)</li>
-                    <li><span class="text-warning">Orange</span> packages <span id="todo-percent"></span> offer wheels, but no compiled wheels targeting the free-threading stable ABI (yet!)</li>
+                    <li><span class="text-abi3t">Green</span> packages <span id="abi3t-percent"></span> offer both <code>abi3</code> and <code>abi3t</code> wheels (🧵).</li>
+                    <li><span class="text-abi3-only">Orange</span> packages <span id="abi3-only-percent"></span> offer <code>abi3</code> wheels but no <code>abi3t</code> wheels (✗).</li>
                 </ul>
                 <p>Free-threaded stable ABI wheels have an <a href="https://packaging.python.org/en/latest/specifications/binary-distribution-format/#file-name-convention">ABI tag</a> of <code>abi3t</code>.</p>
-                <p>Packages that are known to be deprecated are not included (for example, distribute). If your package is incorrectly listed, please <a href="https://github.com/clin1234/pep803-yet/issues/">create a ticket</a>.</p>
-                <h2 id="creating-wheels">My package is orange. What can I do?</h2>
+                <p>Only wheel files in each project's latest PyPI release are checked; older releases are not counted. Packages known to be deprecated are excluded (for example, distribute). If your package is incorrectly listed, please <a href="https://github.com/clin1234/pep803-yet/issues/">create a ticket</a>.</p>
+                <h2 id="creating-wheels">My package doesn't offer abi3t wheels. What can I do?</h2>
                 <p>See <a href="https://hugovk.dev/blog/2023/help-us-test-free-threaded-python-without-the-gil/">how to test</a>
                     and the advice at <a href="https://py-free-threading.github.io/">py-free-threading</a> for adding support for free-threading and creating stable ABI wheels.</p>
                 <h2 id="bugs">Something's wrong with this page!</h2>
@@ -82,12 +68,12 @@
                 <p><em>Note: </em>Requests for behavioural changes in the packaging tools themselves should be directed to <a href="https://discuss.python.org/c/packaging/14">discuss.python.org</a> and the <a href="https://github.com/pypa/packaging-problems">Python Packaging Authority</a>.</p>
                 <h2 id="thanks">Thanks</h2>
                 <p>This is a (lightly) derivatived work of <a href="https://hugovk.dev/free-threaded-wheels/">Hugo van Kemenade's website</a>, which tracks no-GIL wheel distribution not targeting the stable ABI.
-                    The top 500 list comes from <a href="https://hugovk.github.io/top-pypi-packages/">Top PyPI Packages</a>.</p>
+                    The download ranking comes from <a href="https://hugovk.github.io/top-pypi-packages/">Top PyPI Packages</a>.</p>
                 <p>Thanks also to the many <a href="https://github.com/clin1234/pep803-yet/graphs/contributors">contributors</a>.</p>
             </div>
             <div class="col-sm">
                 <div class="list">
-                    <span ng-hide="packages">pythonwheels.com requires javascript to be enabled to display the list of packages.</span>
+                    <span ng-hide="packages">Enable JavaScript to display the list of packages.</span>
                     <a ng-repeat="package in packages" ng-href="https://pypi.org/project/{{ package.name }}" class="btn btn-{{ package.css_class }}" ng-attr-title="{{package.title}}">
                         <span ng-bind="package.name"></span>
                         <span ng-bind="package.icon"></span>
@@ -109,19 +95,12 @@
                 $scope.last_update = res.data.last_update;
                 $scope.packages = res.data.data;
 
-            // Calculate percentages
+            // Exactly the same two categories are used in the SVG and package list.
             const totalPackages = $scope.packages.length;
-            const getPackageCount = (cssClass) => $scope.packages.filter(pkg => pkg.css_class === cssClass).length;
-
-            const successPercentage = (getPackageCount('success') / totalPackages) * 100;
-            const todoPercentage = (getPackageCount('warning') / totalPackages) * 100;
-            const purePyPercentage = (getPackageCount('pure-py') / totalPackages) * 100;
-            const cpPercentage = (getPackageCount('cp-free') / totalPackages) * 100;
-
-            document.getElementById('success-percent').innerText = `(${successPercentage.toFixed(0)}%)`;
-            document.getElementById('todo-percent').innerText = `(${todoPercentage.toFixed(0)}%)`;
-            document.getElementById('pure-py-percent').innerText = `(${purePyPercentage.toFixed(0)}%)`;
-            document.getElementById('cpy-percent').innerText = `(${cpPercentage.toFixed(0)}%)`;
+            const abi3tCount = $scope.packages.filter(pkg => pkg.css_class === 'abi3t').length;
+            const percentage = count => totalPackages ? Math.round(100 * count / totalPackages) : 0;
+            document.getElementById('abi3t-percent').innerText = `(${percentage(abi3tCount)}%)`;
+            document.getElementById('abi3-only-percent').innerText = `(${percentage(totalPackages - abi3tCount)}%)`;
             });
         });
     </script>

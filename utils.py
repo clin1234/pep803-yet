@@ -1,10 +1,14 @@
 import datetime as dt
 import json
-import requests_cache
+import re
+import threading
+from concurrent.futures import ThreadPoolExecutor
 
+import requests
+from requests.adapters import HTTPAdapter
+from urllib3.util.retry import Retry
 
 BASE_URL = "https://pypi.org/pypi"
-
 DEPRECATED_PACKAGES = {
     "BeautifulSoup",
     "bs4",
@@ -17,104 +21,123 @@ DEPRECATED_PACKAGES = {
     "sklearn",
     "y-py",
 }
-
-# Keep responses for one hour
-SESSION = requests_cache.CachedSession("requests-cache", expire_after=60 * 60)
+STABLE_ABI_TAGS = {"abi3", "abi3t"}
+BATCH_SIZE = 64
+MAX_WORKERS = 12
+_thread_local = threading.local()
 
 
 def get_json_url(package_name):
     return BASE_URL + "/" + package_name + "/json"
 
 
+def _session():
+    # A Session per worker avoids sharing mutable requests state across threads.
+    if not hasattr(_thread_local, "session"):
+        session = requests.Session()
+        retries = Retry(
+            total=3,
+            backoff_factor=0.5,
+            status_forcelist=(429, 500, 502, 503, 504),
+        )
+        session.mount("https://", HTTPAdapter(max_retries=retries))
+        _thread_local.session = session
+    return _thread_local.session
+
+
+def stable_abi_tags(files):
+    """Return stable ABI tags from the wheel filenames in a release's files."""
+    tags = set()
+    for file in files:
+        filename = file.get("filename", "")
+        if file.get("packagetype") != "bdist_wheel" or not filename.endswith(".whl"):
+            continue
+        # The final three hyphen-delimited fields are python, ABI and platform.
+        parts = filename[:-4].rsplit("-", 3)
+        if len(parts) == 4:
+            tags.update(STABLE_ABI_TAGS.intersection(parts[-2].split(".")))
+    return tags
+
+
+def get_package_abi_tags(name):
+    response = _session().get(get_json_url(name), timeout=20)
+    if response.status_code == 404:
+        return set()
+    # Fail the build on other errors instead of silently changing the top 100.
+    response.raise_for_status()
+    return stable_abi_tags(response.json().get("urls", []))
+
+
+def _normalized_name(name):
+    return re.sub(r"[-_.]+", "-", name).lower()
+
+
 def annotate_wheels(packages, to_chart: int) -> list[dict]:
-    print("Getting wheel data...")
-    num_packages = len(packages)
-    total = 0
-    keep = []
-    for index, package in enumerate(packages):
-        print(f"{total + 1}/{to_chart} {index + 1}/{num_packages} {package['name']}")
-        if package["name"] in DEPRECATED_PACKAGES:
-            continue
+    """Find the most-downloaded projects with abi3 wheels in the latest release."""
+    if to_chart < 1:
+        raise ValueError("number of packages must be positive")
 
-        has_other_binary_wheel = False
-        has_free_threaded_wheel = False
-        has_pure_python_wheel = False
-        has_stable_free_threaded_wheel = False
-        url = get_json_url(package["name"])
-        response = SESSION.get(url)
-        if response.status_code != 200:
-            print(" ! Skipping " + package["name"])
-            continue
+    deprecated = {_normalized_name(name) for name in DEPRECATED_PACKAGES}
+    candidates = [
+        package
+        for package in sorted(packages, key=lambda p: p["downloads"], reverse=True)
+        if _normalized_name(package["name"]) not in deprecated
+    ]
+    selected = []
+    with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
+        for start in range(0, len(candidates), BATCH_SIZE):
+            batch = candidates[start : start + BATCH_SIZE]
+            # map preserves rank even when API requests finish out of order.
+            for package, tags in zip(
+                batch,
+                executor.map(get_package_abi_tags, (p["name"] for p in batch)),
+            ):
+                if "abi3" not in tags:
+                    continue
+                has_abi3t = "abi3t" in tags
+                selected.append(
+                    {
+                        **package,
+                        "css_class": "abi3t" if has_abi3t else "abi3-only",
+                        "icon": "🧵" if has_abi3t else "✗",
+                        "has_abi3_wheel": True,
+                        "has_abi3t_wheel": has_abi3t,
+                        "stable_free_threaded_wheel": has_abi3t,
+                        "title": (
+                            "abi3 and abi3t wheels"
+                            if has_abi3t
+                            else "abi3 wheels, but no abi3t wheels"
+                        ),
+                    }
+                )
+                if len(selected) == to_chart:
+                    return selected
 
-        data = response.json()
-
-        for download in data["urls"]:
-            if download["packagetype"] == "bdist_wheel":
-                # The wheel filename is:
-                # {distribution}-{version}(-{build tag})?-{python tag}-{abi tag}-{platform tag}.whl
-                # https://packaging.python.org/en/latest/specifications/binary-distribution-format/#file-name-convention
-                abi_tag = download["filename"].removesuffix(".whl").split("-")[-2]
-
-                if abi_tag.endswith("t"):
-                    if abi_tag.startswith("abi3"):
-                        has_stable_free_threaded_wheel = True
-                    elif abi_tag.startswith("cp31"):
-                        has_free_threaded_wheel = True
-                elif abi_tag != "none":
-                    has_other_binary_wheel = True
-                else:
-                    has_pure_python_wheel = True
-
-        if has_stable_free_threaded_wheel:
-            package["css_class"] = "success"
-            package["icon"] = "🧵"
-        elif has_free_threaded_wheel:
-            package["css_class"] = "cp-free"
-            package["icon"] = "🧵"
-        elif has_other_binary_wheel:
-            if not has_pure_python_wheel:
-                package["css_class"] = "warning"
-                package["icon"] = "\u2717"  # Ballot X
-            else:
-                package["css_class"] = "pure-py"
-                package["icon"] = "🐍"
-        else:
-            # Don't show packages with only sdists or pure Python wheels
-            continue
-
-        package["stable_free_threaded_wheel"] = has_stable_free_threaded_wheel
-
-        keep.append(package)
-        total += 1
-        if total == to_chart:
-            break
-
-    return keep
+    raise RuntimeError(
+        f"Only {len(selected)} projects offering abi3 wheels found; "
+        f"requested {to_chart}"
+    )
 
 
 def get_top_packages():
     print("Getting packages...")
-
-    with open("top-pypi-packages.json") as data_file:
-        packages = json.load(data_file)["rows"]
-
-    # Rename keys
-    for package in packages:
-        package["downloads"] = package.pop("download_count")
-        package["name"] = package.pop("project")
-
-    return packages
+    with open("top-pypi-packages.json", encoding="utf-8") as data_file:
+        rows = json.load(data_file)["rows"]
+    return sorted(
+        ({"name": row["project"], "downloads": row["download_count"]} for row in rows),
+        key=lambda package: package["downloads"],
+        reverse=True,
+    )
 
 
 def save_to_file(packages, file_name):
     now = dt.datetime.now(tz=dt.timezone.utc)
-    with open(file_name, "w") as f:
-        f.write(
-            json.dumps(
-                {
-                    "data": packages,
-                    "last_update": now.strftime("%A, %d %B %Y, %X %Z"),
-                },
-                indent=1,
-            )
+    with open(file_name, "w", encoding="utf-8") as output:
+        json.dump(
+            {
+                "data": packages,
+                "last_update": now.strftime("%A, %d %B %Y, %X %Z"),
+            },
+            output,
+            indent=1,
         )

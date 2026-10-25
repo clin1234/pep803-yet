@@ -1,18 +1,13 @@
 from svg_wheel import generate_svg_wheel
-from utils import (
-    annotate_wheels,
-    get_top_packages,
-    save_to_file,
-)
+from utils import annotate_wheels, get_top_packages, save_to_file
 
-TO_CHART = 500
+TO_CHART = 100
 
 
 def main(to_chart: int = TO_CHART) -> None:
-    packages = get_top_packages()
-    packages = annotate_wheels(packages, to_chart)
+    packages = annotate_wheels(get_top_packages(), to_chart)
     save_to_file(packages, "results.json")
-    generate_svg_wheel(packages, to_chart)
+    generate_svg_wheel(packages, len(packages))
 
 
 if __name__ == "__main__":
