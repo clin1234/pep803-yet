@@ -31,17 +31,16 @@ class PackageSelectionTests(unittest.TestCase):
         self.assertEqual(utils.stable_abi_tags([wheel("cp315t")]), set())
 
     def test_top_100_selected_after_filtering_in_download_order(self):
-        packages = [
-            {"name": f"package-{i}", "downloads": 500 - i}
-            for i in range(120)
-        ]
+        packages = [{"name": f"package-{i}", "downloads": 500 - i} for i in range(120)]
         tags = {
             package["name"]: ({"abi3", "abi3t"} if i % 2 else {"abi3"})
             for i, package in enumerate(packages)
             if i >= 5
         }
         with patch.object(
-            utils, "get_package_abi_tags", side_effect=lambda name: tags.get(name, set())
+            utils,
+            "get_package_abi_tags",
+            side_effect=lambda name: tags.get(name, set()),
         ):
             result = utils.annotate_wheels(list(reversed(packages)), 100)
         self.assertEqual(len(result), 100)
@@ -50,11 +49,7 @@ class PackageSelectionTests(unittest.TestCase):
             [f"package-{i}" for i in range(5, 105)],
         )
         for item in result:
-            expected = (
-                "abi3t"
-                if int(item["name"].split("-")[-1]) % 2
-                else "abi3-only"
-            )
+            expected = "abi3t" if int(item["name"].split("-")[-1]) % 2 else "abi3-only"
             self.assertEqual(item["css_class"], expected)
             self.assertEqual(item["has_abi3t_wheel"], expected == "abi3t")
 

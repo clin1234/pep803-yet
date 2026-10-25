@@ -124,10 +124,7 @@ def get_top_packages():
     with open("top-pypi-packages.json", encoding="utf-8") as data_file:
         rows = json.load(data_file)["rows"]
     return sorted(
-        (
-            {"name": row["project"], "downloads": row["download_count"]}
-            for row in rows
-        ),
+        ({"name": row["project"], "downloads": row["download_count"]} for row in rows),
         key=lambda package: package["downloads"],
         reverse=True,
     )
