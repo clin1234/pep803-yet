@@ -1093,13 +1093,6 @@
    "stable_free_threaded_wheel": false
   },
   {
-   "downloads": 16297237,
-   "name": "torchvision",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
-  },
-  {
    "downloads": 15829473,
    "name": "bitarray",
    "css_class": "cp-free",
@@ -1662,13 +1655,6 @@
   {
    "downloads": 5719639,
    "name": "jsonschema-rs",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 5719226,
-   "name": "torchaudio",
    "css_class": "cp-free",
    "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
@@ -2621,8 +2607,8 @@
   {
    "downloads": 2215895,
    "name": "tokenspeed-triton",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3499,7 +3485,21 @@
    "css_class": "cp-free",
    "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 1220896,
+   "name": "tree-sitter-html",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 1215380,
+   "name": "pysam",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Tuesday, 27 October 2026, 15:46:42 UTC"
+ "last_update": "Thursday, 29 October 2026, 16:42:41 UTC"
 }
