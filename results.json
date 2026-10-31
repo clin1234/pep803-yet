@@ -444,8 +444,8 @@
   {
    "downloads": 87261951,
    "name": "watchdog",
-   "css_class": "pure-py",
-   "icon": "\ud83d\udc0d",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Friday, 30 October 2026, 16:35:38 UTC"
+ "last_update": "Saturday, 31 October 2026, 15:59:14 UTC"
 }
