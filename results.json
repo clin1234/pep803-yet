@@ -976,9 +976,9 @@
   {
    "downloads": 25220111,
    "name": "awscrt",
-   "css_class": "cp-free",
+   "css_class": "success",
    "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
+   "stable_free_threaded_wheel": true
   },
   {
    "downloads": 24232146,
@@ -1006,13 +1006,6 @@
    "name": "thinc",
    "css_class": "warning",
    "icon": "\u2717",
-   "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 22918105,
-   "name": "srsly",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3062,8 +3055,8 @@
   {
    "downloads": 1989114,
    "name": "coreforecast",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3499,7 +3492,14 @@
    "css_class": "cp-free",
    "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 1565667,
+   "name": "webrtcvad-wheels",
+   "css_class": "warning",
+   "icon": "\u2717",
+   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Tuesday, 03 November 2026, 17:37:32 UTC"
+ "last_update": "Wednesday, 04 November 2026, 17:49:49 UTC"
 }
