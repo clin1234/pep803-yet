@@ -1828,13 +1828,6 @@
    "stable_free_threaded_wheel": false
   },
   {
-   "downloads": 5464772,
-   "name": "mujoco",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
-  },
-  {
    "downloads": 5393069,
    "name": "vtk",
    "css_class": "cp-free",
@@ -3499,7 +3492,14 @@
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 1547072,
+   "name": "jh2",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
+   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Thursday, 05 November 2026, 17:53:26 UTC"
+ "last_update": "Friday, 06 November 2026, 17:18:24 UTC"
 }
