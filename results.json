@@ -2096,9 +2096,9 @@
   {
    "downloads": 4135643,
    "name": "ua-parser-rs",
-   "css_class": "cp-free",
+   "css_class": "success",
    "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
+   "stable_free_threaded_wheel": true
   },
   {
    "downloads": 4111901,
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Wednesday, 11 November 2026, 17:46:22 UTC"
+ "last_update": "Thursday, 12 November 2026, 18:00:02 UTC"
 }
