@@ -535,9 +535,9 @@
   {
    "downloads": 78009438,
    "name": "argon2-cffi-bindings",
-   "css_class": "cp-free",
+   "css_class": "success",
    "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
+   "stable_free_threaded_wheel": true
   },
   {
    "downloads": 75346353,
@@ -3501,5 +3501,5 @@
    "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Thursday, 12 November 2026, 18:00:02 UTC"
+ "last_update": "Friday, 13 November 2026, 17:33:47 UTC"
 }
