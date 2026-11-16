@@ -3111,8 +3111,8 @@
   {
    "downloads": 1896542,
    "name": "ast-grep-py",
-   "css_class": "warning",
-   "icon": "\u2717",
+   "css_class": "cp-free",
+   "icon": "\ud83e\uddf5",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3148,6 +3148,13 @@
    "name": "ephem",
    "css_class": "cp-free",
    "icon": "\ud83e\uddf5",
+   "stable_free_threaded_wheel": false
+  },
+  {
+   "downloads": 1865370,
+   "name": "tinker",
+   "css_class": "warning",
+   "icon": "\u2717",
    "stable_free_threaded_wheel": false
   },
   {
@@ -3492,14 +3499,7 @@
    "css_class": "warning",
    "icon": "\u2717",
    "stable_free_threaded_wheel": false
-  },
-  {
-   "downloads": 1547072,
-   "name": "jh2",
-   "css_class": "cp-free",
-   "icon": "\ud83e\uddf5",
-   "stable_free_threaded_wheel": false
   }
  ],
- "last_update": "Sunday, 15 November 2026, 16:52:39 UTC"
+ "last_update": "Monday, 16 November 2026, 20:02:32 UTC"
 }
