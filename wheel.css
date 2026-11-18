@@ -1,41 +1,38 @@
-.success {
-  stroke: #198754;
-  stroke-width: 1;
-  fill: #198754;
+/* Shared by the HTML package labels and the embedded SVG wheel. */
+:root {
+  --abi3t-color: #198754;
+  --abi3-only-color: #b45309;
 }
 
-.warning {
-  stroke: #ffca2c;
-  stroke-width: 1;
-  fill: #ffc107;
+.abi3t {
+  stroke: var(--abi3t-color);
+  fill: var(--abi3t-color);
 }
 
-.cp-free {
-  stroke: #900090;
-  stroke-width: 1;
-  fill: #900090;
+.abi3-only {
+  stroke: var(--abi3-only-color);
+  fill: var(--abi3-only-color);
 }
 
-.pure-py {
-  stroke: #90EE90;
-  stroke-width: 1;
-  fill: #90EE90;
+.btn-abi3t, .btn-abi3t:hover, .btn-abi3t:focus {
+  color: white;
+  background-color: var(--abi3t-color);
+  border-color: var(--abi3t-color);
 }
 
-line.wheel-line {
-  stroke: #333;
+.btn-abi3-only, .btn-abi3-only:hover, .btn-abi3-only:focus {
+  color: white;
+  background-color: var(--abi3-only-color);
+  border-color: var(--abi3-only-color);
 }
 
-text.wheel-text {
-  fill: #333;
-}
+.text-abi3t { color: var(--abi3t-color); }
+.text-abi3-only { color: var(--abi3-only-color); }
+
+line.wheel-line { stroke: #333; }
+text.wheel-text { fill: #333; }
 
 @media (prefers-color-scheme: dark) {
-  line.wheel-line {
-    stroke: #ccc;
-  }
-  text.wheel-text {
-    fill: #ccc;
-  }
-
+  line.wheel-line { stroke: #ccc; }
+  text.wheel-text { fill: #ccc; }
 }
